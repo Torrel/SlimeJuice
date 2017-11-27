@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  - Foreground
+  - Items
+  - Background
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Items
+  - Enemies
+  - 
+  - Blocking
+  - Foreground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4043986841
+    locked: 0
+  - name: Parralax
+    uniqueID: 4118037699
+    locked: 0
+  - name: Blockables
+    uniqueID: 3748207165
+    locked: 0
+  - name: Items
+    uniqueID: 2636098521
+    locked: 0
+  - name: Entities
+    uniqueID: 3136185767
+    locked: 0
+  - name: Foreground
+    uniqueID: 3144493431
+    locked: 0
