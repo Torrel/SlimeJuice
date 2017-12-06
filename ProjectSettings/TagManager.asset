@@ -8,6 +8,7 @@ TagManager:
   - Foreground
   - Items
   - Background
+  - ItemDropoff
   layers:
   - Default
   - TransparentFX

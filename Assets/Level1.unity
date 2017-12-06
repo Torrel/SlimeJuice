@@ -1308,9 +1308,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1096417568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.81, y: -0.16, z: -0.09203125}
+  m_LocalPosition: {x: -0.81, y: -0.1, z: -0.09203125}
   m_LocalScale: {x: 1, y: 1.2, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1638344829}
   m_Father: {fileID: 1688097642}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1679,9 +1680,9 @@ GameObject:
   - component: {fileID: 1452075952}
   - component: {fileID: 1452075951}
   - component: {fileID: 1452075950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ItemDropoff
-  m_TagString: Untagged
+  m_TagString: ItemDropoff
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1694,10 +1695,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1452075949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb4c39fdcdb0094ea3e1a2d7a238084, type: 3}
+  m_Script: {fileID: 11500000, guid: 6300911abf1e1fb45a11432adc25a516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Items: {fileID: 0}
+  Items: {fileID: 1669847201890812, guid: f1319649897b4a24bb14921ace252d04, type: 2}
+  Juice1: {fileID: 1096417571}
+  Juicelvl: 0
 --- !u!61 &1452075951
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1707,7 +1710,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.1948274, y: 0.12074754}
@@ -1729,12 +1732,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1452075949}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8925776, y: -0.37, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.1074224, y: -0.16000001, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1688097642}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1475172777
 GameObject:
@@ -1844,7 +1847,7 @@ GameObject:
   - component: {fileID: 1638344831}
   - component: {fileID: 1638344830}
   m_Layer: 13
-  m_Name: SlimeJuice (1)
+  m_Name: SlimeJuice1
   m_TagString: Background
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1857,11 +1860,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1638344828}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.64, y: -0.09, z: -0.09203125}
-  m_LocalScale: {x: 1, y: 1.1999999, z: 1}
+  m_LocalPosition: {x: 1.4499998, y: -0.008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1688097642}
-  m_RootOrder: 1
+  m_Father: {fileID: 1096417571}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1638344830
 Animator:
@@ -2032,7 +2035,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1096417571}
-  - {fileID: 1638344829}
+  - {fileID: 1452075952}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
