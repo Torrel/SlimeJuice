@@ -23,7 +23,7 @@ public class ItemDropoff : MonoBehaviour {
 			{
 
 				Destroy (col.gameObject);
-				Juicelvl += .01f;
+				Juicelvl += 1;
 				Debug.Log("Item nommed");
 				JuicedUp();
 			}
@@ -33,9 +33,9 @@ public class ItemDropoff : MonoBehaviour {
 
 	void JuicedUp()
 	{
-		if(Juicelvl < 0.13f)
+		if(Juicelvl < 11)
 		{
-		Juice1.Translate(0,Juicelvl,0);
+		Juice1.Translate(0,0.1f,0);
 		}
 	}
 }

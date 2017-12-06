@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class InteractionObject : MonoBehaviour {
 
 	private CameraFollow PickedUp;
 	private Animator anim;
 	public bool Booped = false;
-
+	public Rigidbody2D rb;
+	
 	public void Used()
 	{
 		PickedUp.enabled = !PickedUp.enabled;
@@ -17,6 +19,7 @@ public class InteractionObject : MonoBehaviour {
 	void Start () {
 		PickedUp = GetComponent<CameraFollow>();
 		anim = GetComponent<Animator>();
+		rb = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -30,11 +33,13 @@ public class InteractionObject : MonoBehaviour {
 		{
 			anim.Play("Idle");
 			Booped = false;
+			rb.freezeRotation = false;
 		}
 		else if (Booped == false)
 		{
 			anim.Play("Static");
 			Booped = true;
+			rb.freezeRotation = true;
 		}
 		
 	}
