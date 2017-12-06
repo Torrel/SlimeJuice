@@ -71,7 +71,6 @@
 -define:UNITY_2017
 -define:PLATFORM_ARCH_64
 -define:UNITY_64
--define:UNITY_ANALYTICS
 -define:ENABLE_AUDIO
 -define:ENABLE_CACHING
 -define:ENABLE_CLOTH
@@ -155,10 +154,13 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
+Assets/DialoguePromptAppear.cs
 Assets/GameManager.cs
+Assets/ItemDropoff.cs
 Assets/Scripts/CameraFollow.cs
 Assets/Scripts/DialoguePromptAppear.cs
 Assets/Scripts/InteractionObject.cs
+Assets/Scripts/ItemDeposit.cs
 Assets/Scripts/ItemDropoff.cs
 Assets/Scripts/ItemPickup.cs
 Assets/Scripts/Parallaxing.cs
