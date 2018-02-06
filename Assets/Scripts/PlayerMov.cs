@@ -10,6 +10,11 @@ public class PlayerMov : MonoBehaviour {
 	public float moveX;
 	public int JumpCount = 0;
 	public int JumpLimit;
+	public GameManager gamemanager;
+	public PlayerMov player;
+	public GameObject NPC;
+	public GameObject Dman;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -61,4 +66,37 @@ public class PlayerMov : MonoBehaviour {
 		transform.localScale = localScale;
 
 	}
+
+	public void StartConvo()
+	{
+
+
+	}
+
+
+
+	void OnTriggerStay2D(Collider2D other)
+	{
+		if (other.CompareTag ("NPC"))
+		{
+			NPC = other.gameObject;
+		}
+
+
+		if (other.CompareTag ("NPC") && Input.GetButtonDown ("Use"))
+		{
+			gamemanager.inconvo = true;
+			NPC.GetComponent<DialogueTrigger>().TriggerDialogue();
+		
+		}
+
+	}
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if (other.CompareTag ("NPC")) 
+		{
+			gamemanager.inconvo = false;
+		}		
+	}
+
 }

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9cb906515eb26104983e12f4152424a7
-timeCreated: 1512543178
+timeCreated: 1511399917
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -90,9 +90,9 @@ TextureImporter:
         x: 0
         y: 36
         width: 36
-        height: 26
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -104,9 +104,9 @@ TextureImporter:
         x: 36
         y: 36
         width: 36
-        height: 24
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -115,12 +115,12 @@ TextureImporter:
       name: GreenSlime_2
       rect:
         serializedVersion: 2
-        x: 75
+        x: 72
         y: 36
-        width: 31
-        height: 32
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: GreenSlime_3
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 33
-        height: 33
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,9 +146,9 @@ TextureImporter:
         x: 36
         y: 0
         width: 36
-        height: 31
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,12 +157,12 @@ TextureImporter:
       name: GreenSlime_5
       rect:
         serializedVersion: 2
-        x: 73
+        x: 72
         y: 0
-        width: 35
-        height: 30
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
