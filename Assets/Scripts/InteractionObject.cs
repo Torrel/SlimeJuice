@@ -28,7 +28,7 @@ public class InteractionObject : MonoBehaviour {
 	{
 		if (Booped == true)
 		{
-			anim.Play("Idle");
+			anim.Play("Idle"); 
 			Booped = false;
 		}
 		else if (Booped == false)
