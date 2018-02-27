@@ -21,7 +21,6 @@ public class ItemPickup : MonoBehaviour {
 	{
 		if (other.CompareTag ("Items")) 
 		{
-			Debug.Log (other.name);
 			currentItem = other.gameObject;
 		}
 

@@ -33,13 +33,13 @@ public class InteractionObject : MonoBehaviour {
 		{
 			anim.Play("Idle"); 
 			Booped = false;
-			trigger.isTrigger = true;
+			trigger.isTrigger = false;
 		}
 		else if (Booped == false)
 		{
 			anim.Play("Static");
 			Booped = true;
-			trigger.isTrigger = false;
+			trigger.isTrigger = true;
 		}
 		
 	}

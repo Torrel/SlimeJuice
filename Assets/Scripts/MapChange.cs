@@ -5,23 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MapChange : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-
-	void OnCollisionEnter2D (Collision2D col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
-		if(col.gameObject.tag.Equals ("Items"))
+		if (col.gameObject.name == "Sword")
 			{
-				Debug.Log("Ending2 Loading");
-				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);	
+				Debug.Log ("Ending2 Loading");
+				//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);	
 			}
 
 
