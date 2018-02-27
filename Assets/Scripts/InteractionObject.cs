@@ -6,6 +6,7 @@ public class InteractionObject : MonoBehaviour {
 
 	private CameraFollow PickedUp;
 	private Animator anim;
+	private BoxCollider2D trigger;
 	public bool Booped = false;
 
 	public void Used()
@@ -17,6 +18,8 @@ public class InteractionObject : MonoBehaviour {
 	void Start () {
 		PickedUp = GetComponent<CameraFollow>();
 		anim = GetComponent<Animator>();
+		trigger = GetComponent<BoxCollider2D>();
+
 	}
 	
 	// Update is called once per frame
@@ -30,11 +33,13 @@ public class InteractionObject : MonoBehaviour {
 		{
 			anim.Play("Idle"); 
 			Booped = false;
+			trigger.isTrigger = true;
 		}
 		else if (Booped == false)
 		{
 			anim.Play("Static");
 			Booped = true;
+			trigger.isTrigger = false;
 		}
 		
 	}
